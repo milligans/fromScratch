@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+#homebox {
+     background-color : #efd9d1 
+ }
+ hr {
+     border-color : grey;   
+     border-style: none none dotted none;
+     width: 5px;
+     height: 0%;
+ }
+img {
+    height: 400px;
+}
+h1,h3{
+    color: #66BFBF;
+}
+ 

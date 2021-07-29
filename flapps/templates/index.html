@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="topofpage">
+    <div class="row">
+        <div class="col" id="mypic">
+
+                <img src = "{{url_for('static', filename='img/smilligan.jpg')}}" alt="image of Suzanne Milligan" class="square" width ="200px" height="400px">
+        </div>
+        <div class="col" id ="spiel">
+                <h1>Suzanne Milligan</h1>
+                <p><em>Computing Masters student at Cardiff University</em></p>
+        </div>
+   </div>
+   <p>I am currently studying a Masters degree at Cardiff University. It is a computing conversion course. It teaches
+       people with no background in computing how to become a software developer. <em>This page is currently a work in progress.
+       </em>
+   </p>
+
+</div>
+
+
+
+<div id="hr">
+   <h3>Education</h3>
+   <p>I am a graduate of Imperial College, London. My degree is an honours degree in Engineering, and the subject was Materials Science.</p>
+   <ul>
+       <li><strong><a href= "https://www.imperial.ac.uk">Imperial College</a></strong></li>
+       <li><strong><a href="https://www.cardiff.ac.uk">Cardiff University</a></strong></li>
+   </ul>
+</div>
+   <h3>Work Experience</h3>
+
+   <table cellspacing="10" cellpadding="10%">
+       <thead>
+           <tr>
+               <th>Dates</th>
+               <th>Occupation</th>
+           </tr>
+       </thead>
+        <tr>
+            <td>2017-2020</td>
+            <td>BCBC ICT Schools Engineer</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>Masters Student</td>
+        </tr>
+
+   </table>
+   <hr>
+   <h3>Skills</h3>
+   <table cellspacing = "10" cellpadding = "10%">
+       <thead>
+           <tr>
+               <th><h3>Skills</h3></th>
+               <th><h3>Rating</h3></th>
+               <th><h3>Skills</h3></th>
+               <th><h3>Rating</h3></th>
+           </tr>
+       </thead>
+       <tr>
+         <td>Javascript</td>
+        <td> ⭐⭐⭐⭐</td>
+         <td>HTML</td>
+        <td> ⭐⭐⭐</td>
+
+       </tr>
+        <tr>
+            <td>Python</td>
+            <td>⭐⭐⭐</td>
+            <td>CSS</td>
+            <td>⭐</td>
+        </tr>
+   </table>
+
+   <a href = "hobbies.html"><strong>Hobbies</strong></a>
+   <a href = "contact.html">Contact Me</a>
+    <a href= "{{ url_for('form')}}">Form</a>
+</div>
+{% endblock content %}
